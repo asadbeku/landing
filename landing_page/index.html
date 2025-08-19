@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIP Automatica – Промышленное оборудование и датчики</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">KIP Automatica</div>
+            <nav class="language-switcher">
+                <button id="ruBtn" class="lang-btn active" data-lang="ru">Рус</button>
+                <button id="uzBtn" class="lang-btn" data-lang="uz">Oʻz</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 data-i18n="hero_title">Решения для промышленной автоматизации</h1>
+            <p data-i18n="hero_subtitle">Продажа оборудования и датчиков для всех отраслей</p>
+            <a href="#contact" class="btn" data-i18n="hero_cta">Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 data-i18n="services_title">Наши услуги</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3 data-i18n="service1_title">Проектирование систем КИПиА</h3>
+                    <p data-i18n="service1_desc">Разработка и внедрение автоматизированных решений</p>
+                </div>
+                <div class="service-item">
+                    <h3 data-i18n="service2_title">Поставка оборудования</h3>
+                    <p data-i18n="service2_desc">Широкий ассортимент датчиков и приборов напрямую от производителей</p>
+                </div>
+                <div class="service-item">
+                    <h3 data-i18n="service3_title">Поддержка и сервис</h3>
+                    <p data-i18n="service3_desc">Техническая поддержка, монтаж и обслуживание</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 data-i18n="about_title">О компании</h2>
+            <p data-i18n="about_text">Мы более 10 лет поставляем надежные решения для автоматизации производственных процессов.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 data-i18n="contact_title">Свяжитесь с нами</h2>
+            <p data-i18n="contact_subtitle">Оставьте заявку, и мы ответим в ближайшее время</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name_placeholder" required>
+                <input type="email" placeholder="E-mail" data-i18n-placeholder="email_placeholder" required>
+                <textarea placeholder="Сообщение" data-i18n-placeholder="message_placeholder" required></textarea>
+                <button type="submit" class="btn" data-i18n="contact_send">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> KIP Automatica</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
